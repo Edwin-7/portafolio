@@ -1,0 +1,101 @@
+
+/*General setings*/
+
+header, .main-container, footer {
+  padding-left: 240px; }
+
+@media only screen and (max-width : 992px) {
+  header, .main-container, footer {
+    padding-left: 0; } }
+
+
+/*Fuentes*/
+
+@font-face {
+   font-family: Monttserrat-regular;
+   font-style: normal;
+   font-weight: normal;
+   src: url(../font/Monttserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+   font-family: Monttserrat;
+   font-style: normal;
+   font-weight: normal;
+   src: url(../font/Monttserrat/Montserrat-Bold.ttf);
+}
+
+.font-menu{
+	font-family: Monttserrat;
+	color: rgba(255, 255, 255, .60) !important;
+}
+
+.font-inicio{
+	font-family: Monttserrat;
+	color: rgba(0, 0, 0, .70);
+	padding: 10% 10% 0% 10%;
+  font-size: 40px;
+}
+
+.font-Hsbilidades{
+  font-family: Monttserrat;
+  color: rgba(0, 0, 0, .90);
+  font-size: 40px;
+}
+
+.font-habili-num{
+  font-family: Monttserrat;
+  color: rgba(0, 0, 0, .50);
+  font-size: 59px;
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+    .font-habili-num{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+    .font-habili-num{
+    font-size: 30px;
+  }
+}
+
+.font-form{
+  font-family: Monttserrat;
+  color: rgba(0, 0, 0, .70);
+  font-size: 18px;
+}
+
+
+.font-frase{
+font-family: Monttserrat;
+color: rgba(0, 0, 0, .50);
+font-size: 35px;
+font-style: italic;
+
+}
+
+
+.font-autor{
+font-family: Monttserrat;
+color: rgba(0, 0, 0, .50);
+font-size: 25px;
+font-style: italic;
+
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+  .font-frase{
+  font-size: 25px
+  }
+
+  .font-autor{
+    font-size: 15px;
+   }
+
+}
+
+/*Typography*/
+
+.tit

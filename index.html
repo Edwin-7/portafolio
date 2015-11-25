@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link type="text/css" rel="stylesheet" href="css/animate.css"/>
+
+		<!-- Import Icons -->
+
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+		<link rel="stylesheet" href="font/font-awesome.min.css">
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+
+	<body>
+
+		<!-- Menu -->
+
+		<header>
+
+			<!-- buttom Copllasible -->
+
+      		<div class="container">
+      			<a href="#" id="btn-flota-movil" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="fa fa-bars fa-2x"></i></i></a>
+      		</div>
+
+      		<!-- items -->
+
+		    <ul id="nav-mobile" class="side-nav fixed my-menu" style="width: 240px;">
+
+		    	<li class="logo">
+		    		<img src="img/EdwinCorrea.png">
+		    	</li>
+		        
+	        	<li class="bold" id="inicio"><a href="#!" class="waves-effect waves-teal font-menu"><i class="material-icons fa fa-home fa-2x"></i>Inicio</a></li>
+	        	<li class="bold" id="acercaDeMi"><a href="#!" class="waves-effect waves-teal font-menu"><i class="material-icons fa fa-user fa-2x"></i>Acerca de Mí</a></li>
+	        
+	        	<li class="bold" id="btn_proyectos"><a href="#!" class="waves-effect waves-teal font-menu"><i class="material-icons fa fa-code fa-2x"></i>Proyectos</a></li>
+
+	        	<li class="bold" id="btn_habilidades"><a href="#!" class="waves-effect waves-teal font-menu"><i class="material-icons fa fa-bar-chart fa-2x"></i>Habilidades</a></li>
+
+	        	<li class="bold" id="btn_contacto"><a href="#!" class="waves-effect waves-teal font-menu"><i class="material-icons fa fa-commenting fa-2x"></i>Contacto</a></li>
+
+		    </ul>
+    	</header>
+
+    	<!-- End Menu -->
+
+    	<!-- Content -->
+
+    	<main class="main-container">
+
+    		<!-- inicio  -->
+    		<section id="inicio" class="section-inicio">
+    			<div class="parallax-container">
+			    	<div class="parallax"><img class="bg-1" src="img/bg.jpg"></div>
+
+	    		<div class="row">
+	    			<div class="col s12 m12 l8">
+	    				<h2 class="font-inicio"><div id="maquinas"></div></h2>
+	    			</div>
+	    		</div>
+	    		
+	    		<!-- Button HV -->
+
+	    		<div class="row">
+	    			<div class="col s12  m12   l8">
+	    				<!-- Modal Trigger -->
+					  <a id="boton-hv" class="waves-effect waves-grey btn-primary modal-trigger" href="#modal1"><i class="material-icons fa fa-file-text fa-1x"></i>Solicítame una <span class="text-accent">Hoja de vida</span></a>
+
+					  <!-- Modal Structure -->
+					  <div id="modal1" class="modal">
+					    <div class="modal-content">
+					      <h4 class="font-form">Enviar hoja de vida a:</h4>
+					          <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Nombre</label>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Email</label>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Mensaje</label>
+                                </div>
+                              </div>
+					    </div>
+					    <div class="modal-footer">
+                            <button class="waves-effect waves-light btn-enviar" type="submit" name="action">
+                                <i class="material-icons fa fa-paper-plane"></i>Enviar
+                              </button>
+					      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="fa fa-times-circle fa-5x"></i></a>
+					    </div>
+					  </div>
+	    			</div>
+	    		</div>
+
+	    		<!-- End Button HV -->
+	    		
+	    		<!-- Targeta -->
+	    		
+	    		<div class="row">
+	    			<div class="s12 col m6 offset-m6 l6 offset-l6">
+	    				<div id="targeta" class="card white darken-1">
+				            <div class="card-content white-text">
+				              <span class="card-title title-primary">Edwin Correa</span>
+				               <blockquote>
+				              		<p class="text-primary"><i class="material-icons fa fa-mobile"></i>321 307 10 57</p>
+				              		<p class="text-primary"><i class="material-icons fa fa-envelope"></i>emcorrea32@gmail.com</p>
+				              		<p class="text-primary"><i class="material-icons fa fa-map-marker"></i>Itaüi/Colombia</p>
+				               </blockquote>
+				            </div>
+				          </div>
+	    			</div>
+	    		</div>
+
+	    		<!-- End Targeta -->
+			  	</div>
+    		</section>
+    		<!-- end Inicio -->
+
+
+    		<!-- Sobre mi -->
+    		<section id="sobre_mi">
+    			<div class="row">
+    				<div class="col s12  m12   l12 separador right-align">
+    					<h2 class="title-separator">Sobre Mí</h2>
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="col s12  m6   l6">
+    					<h3 class="subtitle">Quien soy</h3>
+    					<p class="text-primary">Bueno, soy tecnólogo en análisis y desarrollo de sistemas de información, me sumergí en el mundo de la programación en el año 2012, desde ahí empecé a crear material para la Web. En mis tres años de experiencia como programador he trabajado para diferentes agencias Web y he desarrollado proyectos FreeLancer, en mis tempos libre me encuentro compartiendo con mi hija y mi esposa o si no estaré en frente de la pc haciendo algún tipo de curso, así es,  gran parte de mi conocimiento se debe a  que soy empírico y muy investigador,  actualmente vivo en Itagüí – Colombia, de momento me apasiona el desarrollo Front End y lo disfruto al máximo Para más adelante, ¿quién sabe? Voy a estar haciendo cosas Seguro web. Tal vez para ti.</p>
+    				</div>
+    				<div class="col s12  m6   l6">
+    					<h3 class="subtitle">Lo que hago</h3>
+    					<p class="text-primary">Construyo sitios web desde cero, desde una página simple en HTML, CSS Y JS hasta un tema para WordPress, Joomla o Prestashop, partiendo de un diseño en PHOTOSHOP y soportadas por los diferentes dispositivos móviles (Resposive Desing). Me especializo más en trabajar el desarrollo Front End ( HTML, CSS Y JS ) aunque hay veces toca trabajar un poco de  Backend (PHP, My SQL) no tengo miedo de ensuciarme las manos con estos lenguajes. Actualmente estudio diseño de interfaces Web, en el futuro quiero desarrollar APP’S para androind, ¡ha! Y también me gusta mucho Ruby on Rails.</p>
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="col s4  m4   l4">
+    					 <img id="img_psd" class="responsive-img" src="img/sobre_mi/psd.png">
+    				</div>
+    				<div class="col s4  m4   l4">
+    					 <img id="img_responsive" class="responsive-img" src="img/sobre_mi/responsive.png">
+    				</div>
+    				<div class="col s4  m4   l4">
+    					 <img id="img_start" class="responsive-img" src="img/sobre_mi/start.png">
+    				</div>
+    			</div>
+    		</section>
+    		<!-- End Sobre mi -->
+
+    		<!-- Proyectos -->
+    			<section id="proyectos">
+    				<div class="row">
+    					<div class="col s12  m12   l12 separador right-align">
+    						<h2 class="title-separator">Poyectos</h2>
+    					</div>
+    				</div>
+
+                    <!-- Botones -->
+
+    				<div class="row">
+    					
+    					<div class="col s2  m2   l2" id="btn_all">
+                            <div class="row img-bg center-align z-depth-3">
+                                <img class="responsive-img btn-proyects" src="img/btn_poyects/all.png">
+                            </div>
+                        </div>
+
+                        <div class="col s2  m2   l2" id="btn_html">
+    						<div class="row img-bg center-align z-depth-3">
+    							<img class="responsive-img btn-proyects" src="img/btn_poyects/html.png">
+    						</div>
+    					</div>
+    					<div class="col s2  m2   l2" id="btn_joomla">
+    						<div class="row img-bg center-align z-depth-3">
+    							<img class="responsive-img btn-proyects" src="img/btn_poyects/joomla.png">
+    						</div>
+    					</div>
+    					<div class="col s2  m2   l2" id="btn_wordpress">
+    						<div class="row img-bg center-align z-depth-3">
+    							<img class="responsive-img btn-proyects" src="img/btn_poyects/wordpress.png">
+    						</div>
+    					</div>
+    					<div class="col s2  m2   l2" id="btn_prestashop">
+    						<div class="row img-bg center-align z-depth-3">
+    							<img class="responsive-img btn-proyects" src="img/btn_poyects/prestashop.png">
+    						</div>
+    					</div>
+    					<div class="col s2  m2   l2" id="btn_rails">
+    						<div class="row img-bg center-align z-depth-3">
+    							<img class="responsive-img btn-proyects" src="img/btn_poyects/rails.png">
+    						</div>
+    					</div>
+    					
+    				</div>
+
+                    <!-- End Botones -->
+
+    				<!-- Paginas -->
+    				<div class="row paginas html">
+                        <div class="col s12  m12   l12">
+                            <div class="bg-pag z-depth-2">
+                                <h2 class="title-pagina">Milenium</h2>
+                                <div class="hover-pag">
+                                    <a class="waves-effect waves-grey btn-ver right-align" href="#"><i class="material-icons fa fa-eye fa-1x"></i>Ver Sitio</a>
+                                </div>
+                                <img class="img-pagina" src="img/paginas/milenium.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row paginas joomla">
+                        <div class="col s12  m12   l12">
+                            <div class="bg-pag z-depth-2">
+                                <h2 class="title-pagina">Tecnacol</h2>
+                                <div class="hover-pag">
+                                    <a class="waves-effect waves-grey btn-ver right-align" href="#"><i class="material-icons fa fa-eye fa-1x"></i>Ver Sitio</a>
+                                </div>
+                                <img class="img-pagina" src="img/paginas/tecnacol.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row paginas wordpress">
+                        <div class="col s12  m12   l12">
+                            <div class="bg-pag z-depth-2">
+                                <h2 class="title-pagina">Green Park</h2>
+                                <div class="hover-pag">
+                                    <a class="waves-effect waves-grey btn-ver right-align" href="#"><i class="material-icons fa fa-eye fa-1x"></i>Ver Sitio</a>
+                                </div>
+                                <img class="img-pagina" src="img/paginas/green-park.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row paginas html">
+                        <div class="col s12  m12   l12">
+                            <div class="bg-pag z-depth-2">
+                                <h2 class="title-pagina">Nyrs</h2>
+                                <div class="hover-pag">
+                                    <a class="waves-effect waves-grey btn-ver right-align" href="#"><i class="material-icons fa fa-eye fa-1x"></i>Ver Sitio</a>
+                                </div>
+                                <img class="img-pagina" src="img/paginas/nyrs.png">
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="row paginas rails">
+                        <div class="col s12  m12   l12">
+                            <div class="bg-pag z-depth-2">
+                                <h2 class="title-pagina">Cosmovision Real</h2>
+                                <div class="hover-pag">
+                                    <a class="waves-effect waves-grey btn-ver right-align" href="#"><i class="material-icons fa fa-eye fa-1x"></i>Ver Sitio</a>
+                                </div>
+                                <img class="img-pagina" src="img/paginas/cosmovisionreal.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row paginas prestashop">
+                        <div class="col s12  m12   l12">
+                            <div class="bg-pag z-depth-2">
+                                <h2 class="title-pagina">Squooh</h2>
+                                <div class="hover-pag">
+                                    <a class="waves-effect waves-grey btn-ver right-align" href="#"><i class="material-icons fa fa-eye fa-1x"></i>Ver Sitio</a>
+                                </div>
+                                <img class="img-pagina" src="img/paginas/squooh.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row paginas joomla">
+                        <div class="col s12  m12   l12">
+                            <div class="bg-pag z-depth-2">
+                                <h2 class="title-pagina">Microcad 3d</h2>
+                                <div class="hover-pag">
+                                    <a class="waves-effect waves-grey btn-ver right-align" href="#"><i class="material-icons fa fa-eye fa-1x"></i>Ver Sitio</a>
+                                </div>
+                                <img class="img-pagina" src="img/paginas/microcad.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row paginas rails">
+                        <div class="col s12  m12   l12">
+                            <div class="bg-pag z-depth-2">
+                                <h2 class="title-pagina">Ceres</h2>
+                                <div class="hover-pag">
+                                    <a class="waves-effect waves-grey btn-ver right-align" href="#"><i class="material-icons fa fa-eye fa-1x"></i>Ver Sitio</a>
+                                </div>
+                                <img class="img-pagina" src="img/paginas/ceres.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row paginas joomla">
+    					<div class="col s12  m12   l12">
+    						<div class="bg-pag z-depth-2">
+    							<h2 class="title-pagina">Agrofresh Products</h2>
+    							<div class="hover-pag">
+    								<a class="waves-effect waves-grey btn-ver right-align" href="#"><i class="material-icons fa fa-eye fa-1x"></i>Ver Sitio</a>
+    							</div>
+    							<img class="img-pagina" src="img/paginas/agrofresh.png">
+    						</div>
+    					</div>
+    				</div>
+    				<!-- End Paginas -->
+    			</section>
+
+    		<!-- End Proyectos -->
+
+            <!-- Habilidades -->
+                <section id="habilidades">
+                    <div class="row">
+                        <div class="col s12  m12   l12 separador right-align">
+                            <h2 class="title-separator">Habilidades</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12  m12   l12">
+                            <h2 class="font-Hsbilidades">Front End</h2>
+                            <div class="row valign-wrapper">
+                                <div class="col s9  m9   l9">
+                                     <div class="progress">
+                                          <div class="determinate" style="width: 70%"></div>
+                                      </div>
+                                </div>
+                                <div class="col s3  m3   l3 center-align">
+                                    <h2 class="font-habili-num">75,8%</h2>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>  
+
+                    <div class="row">
+                        <div class="col s3  m3   l3">
+                            <div class="responsive-img hover-habilidad">
+                                <div class="contenedor-circulo">
+                                    <span class="num-habilidad">90%</span>
+                                    <div class="circulo">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="responsive-img img-habilidad" src="img/habilidades/html.png">
+                        </div>
+
+                         <div class="col s3  m3   l3">
+                            <div class="responsive-img hover-habilidad">
+                                <div class="contenedor-circulo">
+                                    <span class="num-habilidad">90%</span>
+                                    <div class="circulo">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="responsive-img img-habilidad" src="img/habilidades/css.png">
+                        </div>
+
+                        <div class="col s3  m3   l3">
+                            <div class="responsive-img hover-habilidad">
+                                <div class="contenedor-circulo">
+                                    <span class="num-habilidad">70%</span>
+                                    <div class="circulo">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="responsive-img img-habilidad" src="img/habilidades/jquery.png">
+                        </div>
+
+                        <div class="col s3  m3   l3">
+                            <div class="responsive-img hover-habilidad">
+                                <div class="contenedor-circulo">
+                                    <span class="num-habilidad">70%</span>
+                                    <div class="circulo">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="responsive-img img-habilidad" src="img/habilidades/jqueryui.png">
+                        </div>
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col s3  m3   l3">
+                            <div class="responsive-img hover-habilidad">
+                                <div class="contenedor-circulo">
+                                    <span class="num-habilidad">70%</span>
+                                    <div class="circulo">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="responsive-img img-habilidad" src="img/habilidades/wordpress.png">
+                        </div>
+
+                         <div class="col s3  m3   l3">
+                            <div class="responsive-img hover-habilidad">
+                                <div class="contenedor-circulo">
+                                    <span class="num-habilidad">70%</span>
+                                    <div class="circulo">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="responsive-img img-habilidad" src="img/habilidades/joomla.png">
+                        </div>
+
+                        <div class="col s3  m3   l3">
+                            <div class="responsive-img hover-habilidad">
+                                <div class="contenedor-circulo">
+                                    <span class="num-habilidad">70%</span>
+                                    <div class="circulo">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="responsive-img img-habilidad" src="img/habilidades/prestashop.png">
+                        </div>
+
+                        <div class="col s3  m3   l3">
+                            <div class="responsive-img hover-habilidad">
+                                <div class="contenedor-circulo">
+                                    <span class="num-habilidad">98%</span>
+                                    <div class="circulo">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="responsive-img img-habilidad" src="img/habilidades/bootstrap.png">
+                        </div>
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col s3  m3   l3">
+                            <div class="responsive-img hover-habilidad">
+                                <div class="contenedor-circulo">
+                                    <span class="num-habilidad">90%</span>
+                                    <div class="circulo">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="responsive-img img-habilidad" src="img/habilidades/materialize.png">
+                        </div>
+
+                         <div class="col s3  m3   l3">
+                            <div class="responsive-img hover-habilidad">
+                                <div class="contenedor-circulo">
+                                    <span class="num-habilidad">90%</span>
+                                    <div class="circulo">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="responsive-img img-habilidad" src="img/habilidades/mdl.png">
+                        </div>
+
+                        <div class="col s3  m3   l3">
+                            <div class="responsive-img hover-habilidad">
+                                <div class="contenedor-circulo">
+                                    <span class="num-habilidad">70%</span>
+                                    <div class="circulo">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="responsive-img img-habilidad" src="img/habilidades/photoshop.png">
+                        </div>
+
+                        <div class="col s3  m3   l3">
+                            <div class="responsive-img hover-habilidad">
+                                <div class="contenedor-circulo">
+                                    <span class="num-habilidad">50%</span>
+                                    <div class="circulo">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="responsive-img img-habilidad" src="img/habilidades/rails.png">
+                        </div>
+                        
+                    </div>
+
+                    <!-- Back End -->
+
+                    <div class="row">
+                        <div class="col s12  m12   l12">
+                            <h2 class="font-Hsbilidades">Back End</h2>
+                            <div class="row valign-wrapper">
+                                <div class="col s9  m9   l9">
+                                     <div class="progress">
+                                          <div class="determinate" style="width: 30%"></div>
+                                      </div>
+                                </div>
+                                <div class="col s3  m3   l3 center-align">
+                                    <h2 class="font-habili-num">25,2%</h2>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col s3  m3   l3">
+                            <div class="responsive-img hover-habilidad">
+                                <div class="contenedor-circulo">
+                                    <span class="num-habilidad">50%</span>
+                                    <div class="circulo">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="responsive-img img-habilidad" src="img/habilidades/php.png">
+                        </div>
+
+                        <div class="col s3  m3   l3">
+                            <div class="responsive-img hover-habilidad">
+                                <div class="contenedor-circulo">
+                                    <span class="num-habilidad">50%</span>
+                                    <div class="circulo">
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="responsive-img img-habilidad" src="img/habilidades/mysql.png">
+                        </div>
+                        
+                    </div>
+                </section>
+            <!-- End Habilidades -->
+
+            <!-- Contacto -->
+
+            <section id="contacto">
+                <div class="row">
+                     <div class="col s12  m12   l12 separador right-align">
+                        <h2 class="title-separator">Contacto</h2>
+                    </div>
+                </div>
+                <div class="row">
+                
+                    <div class="col s12  m6   l6">
+                        <div class="card">
+                            <div class="card-content">
+                              <span class="card-title font-form">Contacto</span>
+                                  <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="last_name" type="text" class="validate">
+                                        <label for="last_name">Nombre</label>
+                                    </div>
+                                  </div>
+
+                                  <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="last_name" type="text" class="validate">
+                                        <label for="last_name">Email</label>
+                                    </div>
+                                  </div>
+
+                                  <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">Mensaje</label>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="card-action">
+                               <button class="waves-effect waves-light btn-enviar" type="submit" name="action">
+                                <i class="material-icons fa fa-paper-plane"></i>Enviar
+                              </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12  m6   l6">
+                        <div class="row center-align">
+                            <div class="col s12  m12   l12">
+                                <i class="fa fa-quote-left fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class="row center-align">
+                            <h2 class="font-frase">
+                                La creatividad consiste simplemente en conectar cosas.
+                            </h2>
+                        </div>
+                        <div class="row center-align">
+                            <div class="col s12  m12   l12"> 
+                                <i class="fa fa-quote-right fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class="row right-align">
+                            <h2 class="font-autor">
+                                --Steven Jobs--
+                            </h2>
+                        </div>
+                        <div class="row center-align">
+                            <div class="col s3  m3   l3">
+                                 <a class="btn-floating btn-large waves-effect waves-light red btn-social"><i class="material-icons fa fa-github-alt fa-3x"></i></a>
+                            </div>
+                            <div class="col s3  m3   l3">
+                                <a class="btn-floating btn-large waves-effect waves-light red btn-social"><i class="material-icons fa fa-linkedin fa-3x"></i></a>
+                            </div>
+                            <div class="col s3  m3   l3">
+                                <a class="btn-floating btn-large waves-effect waves-light red btn-social"><i class="material-icons fa fa-google-plus fa-3x"></i></a>
+                            </div>
+                            <div class="col s3  m3   l3">
+                                <a class="btn-floating btn-large waves-effect waves-light red btn-social"><i class="material-icons fa fa-facebook fa-3x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Contacto -->
+
+            <!-- Footer -->
+
+         <section>
+          
+            <div class="row">
+              <div class="col s12">
+              </div>
+            </div>
+        
+          <div class="row  center-align">
+                <img class="responsive-img img-footer" src="img/footer.png"></img>
+            <div class="col s12 copyright-footer">
+            
+                
+              <h5 class="text-footer">Edwin Correa - From End Developer</h5>
+              <h5 class="text-footer">© 2015</h5>
+        
+           
+            </div>
+          </div>
+        </section>
+
+            <!-- End Footer -->
+
+    	</main>
+
+
+		<!--Import jQuery before materialize.js-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/efects.js"></script>
+	</body>
+</html>
