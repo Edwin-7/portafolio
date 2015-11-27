@@ -551,32 +551,38 @@
                     <div class="col s12  m6   l6">
                         <div class="card">
                             <div class="card-content">
-                              <span class="card-title font-form">Contacto</span>
-                                  <div class="row">
-                                    <div class="input-field col s12">
-                                        <input id="last_name" type="text" class="validate">
-                                        <label for="last_name">Nombre</label>
-                                    </div>
-                                  </div>
+                                <form>  
+                                  <span class="card-title font-form">Contacto</span>
+                                      <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="last_name" type="text" class="validate" name="nombre">
+                                            <label for="last_name">Nombre</label>
+                                        </div>
+                                      </div>
 
-                                  <div class="row">
-                                    <div class="input-field col s12">
-                                        <input id="last_name" type="text" class="validate">
-                                        <label for="last_name">Email</label>
-                                    </div>
-                                  </div>
+                                      <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="last_name" type="email" class="validate" name="email">
+                                            <label for="last_name">Email</label>
+                                        </div>
+                                      </div>
 
-                                  <div class="row">
-                                    <div class="input-field col s12">
-                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                        <label for="textarea1">Mensaje</label>
-                                    </div>
-                                  </div>
+                                      <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea1" class="materialize-textarea" name="mensaje"></textarea>
+                                            <label for="textarea1">Mensaje</label>
+                                        </div>
+                                      </div>
+                                </form>
                             </div>
                             <div class="card-action">
-                               <button class="waves-effect waves-light btn-enviar" type="submit" name="action">
-                                <i class="material-icons fa fa-paper-plane"></i>Enviar
+                               <button id="btnContact" class="waves-effect waves-light btn-enviar" type="submit" name="action">
+                                <i class="material-icons fa fa-paper-plane initial"></i>
+                                <i class="material-icons left worked" style="display:none;">settings</i>
+                                <i class="material-icons left finish" style="display:none;">done</i>
+                                Enviar
                               </button>
+                              <div id="destino"></div>
                             </div>
                         </div>
                     </div>

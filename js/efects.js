@@ -240,4 +240,25 @@ $(document).ready(function(){
         $(this).addClass('animated rotateOut');
       })
     })
+
+
+/********************************* Contacto ****************************************/
+
+  $("#btnContact").click(function(evento){
+       evento.preventDefault();
+    var nombre= $( "input[name='nombre']" ).val();
+    var email= $( "input[name='email']" ).val();
+    var mensaje= $( "textarea[name='mensaje']" ).val();
+    //alert(nombre + email + mensaje);
+    //stop();
+      $(".initial").css("display", "none");
+      $(".worked").css("display", "block");
+     
+       $("#destino").load("http://wp-teme-1.edusite.me/contac_portafolio.php", {nombre, email, mensaje}, function(){
+          $(".finish").css("display", "block");
+          $(".worked").css("display", "none");
+     });
+    });
+
+
 })
