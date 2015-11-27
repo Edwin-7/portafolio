@@ -400,12 +400,19 @@ a#btn-flota-movil {
     background:#ff9933;
     border-radius:50%;
     -webkit-animation: girar 2s infinite linear;
+    -moz-animation: girar 2s infinite linear;
     animation: girar 2s infinite linear;
 }
 @-webkit-keyframes girar {
     from { transform: rotate(0deg)  translate(-70px) rotate(0deg); }
     to { transform: rotate(360deg) translate(-70px) rotate(-360deg); }
 }
+
+@-moz-keyframes girar {
+    from { transform: rotate(0deg)  translate(-70px) rotate(0deg); }
+    to { transform: rotate(360deg) translate(-70px) rotate(-360deg); }
+}
+
 @keyframes girar {
     from { transform: rotate(0deg)  translate(-70px) rotate(0deg); }
     to { transform: rotate(360deg) translate(-70px) rotate(-360deg); }
@@ -425,12 +432,19 @@ a#btn-flota-movil {
         background:#ff9933;
         border-radius:50%;
         -webkit-animation: girar 2s infinite linear;
+        -moz-animation: girar 2s infinite linear;
         animation: girar 2s infinite linear;
     }
     @-webkit-keyframes girar {
         from { transform: rotate(0deg)  translate(-50px) rotate(0deg); }
         to { transform: rotate(360deg) translate(-50px) rotate(-360deg); }
     }
+
+    @-moz-keyframes girar {
+        from { transform: rotate(0deg)  translate(-50px) rotate(0deg); }
+        to { transform: rotate(360deg) translate(-50px) rotate(-360deg); }
+    }
+
     @keyframes girar {
         from { transform: rotate(0deg)  translate(-50px) rotate(0deg); }
         to { transform: rotate(360deg) translate(-50px) rotate(-360deg); }
