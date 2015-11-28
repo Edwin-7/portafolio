@@ -242,7 +242,25 @@ $(document).ready(function(){
     })
 
 
-/********************************* Contacto ****************************************/
+/********************************* Contacto HV****************************************/
+
+  $("#btnHv").click(function(evento){
+       evento.preventDefault();
+    var hv_nombre= $( "input[name='hv_nombre']" ).val();
+    var hv_email= $( "input[name='hv_email']" ).val();
+    var hv_mensaje= $( "textarea[name='hv_mensaje']" ).val();
+    //alert(nombre + email + mensaje);
+    //stop();
+      $(".hv_initial").css("display", "none");
+      $(".hv_worked").css("display", "block");
+     
+       $("#destino").load("http://wp-teme-1.edusite.me/contac_hv.php", {hv_nombre, hv_email, hv_mensaje}, function(){
+          $(".hv_finish").css("display", "block");
+          $(".hv_worked").css("display", "none");
+     });
+    });
+
+  /********************************* Contacto ****************************************/
 
   $("#btnContact").click(function(evento){
        evento.preventDefault();

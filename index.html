@@ -77,34 +77,40 @@
 					  <!-- Modal Structure -->
 					  <div id="modal1" class="modal">
 					    <div class="modal-content">
-					      <h4 class="font-form">Enviar hoja de vida a:</h4>
-					          <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="last_name" type="text" class="validate">
-                                    <label for="last_name">Nombre</label>
-                                </div>
-                              </div>
+                            <form action="">
+    					      <h4 class="font-form">Enviar hoja de vida a:</h4>
+    					          <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="last_name" type="text" class="validate" name="hv_nombre">
+                                        <label for="last_name">Nombre</label>
+                                    </div>
+                                  </div>
 
-                              <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="last_name" type="text" class="validate">
-                                    <label for="last_name">Email</label>
-                                </div>
-                              </div>
+                                  <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="last_name" type="email" class="validate" name="hv_email">
+                                        <label for="last_name">Email</label>
+                                    </div>
+                                  </div>
 
-                              <div class="row">
-                                <div class="input-field col s12">
-                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                    <label for="textarea1">Mensaje</label>
-                                </div>
-                              </div>
-					    </div>
-					    <div class="modal-footer">
-                            <button class="waves-effect waves-light btn-enviar" type="submit" name="action">
-                                <i class="material-icons fa fa-paper-plane"></i>Enviar
+                                  <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea1" class="materialize-textarea" name="hv_mensaje"></textarea>
+                                        <label for="textarea1">Mensaje</label>
+                                    </div>
+                                  </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="btnHv" class="waves-effect waves-light btn-enviar" type="submit" name="action">
+                                <i class="material-icons fa fa-paper-plane hv_initial"></i>
+                                <i class="material-icons fa fa-spinner fa-pulse hv_worked" style="display:none;"></i>
+                                <i class="material-icons fa fa-check hv_finish" style="display:none;"></i>
+                                Enviar
                               </button>
-					      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="fa fa-times-circle fa-5x"></i></a>
-					    </div>
+                          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="fa fa-times-circle fa-5x"></i></a>
+                              <div class="hv_destino"></div>
+                              </form>
+                        </div>
 					  </div>
 	    			</div>
 	    		</div>
@@ -578,8 +584,8 @@
                             <div class="card-action">
                                <button id="btnContact" class="waves-effect waves-light btn-enviar" type="submit" name="action">
                                 <i class="material-icons fa fa-paper-plane initial"></i>
-                                <i class="material-icons left worked" style="display:none;">settings</i>
-                                <i class="material-icons left finish" style="display:none;">done</i>
+                                <i class="material-icons fa fa-spinner fa-pulse worked" style="display:none;"></i>
+                                <i class="material-icons fa fa-check finish" style="display:none;"></i>
                                 Enviar
                               </button>
                               <div id="destino"></div>
