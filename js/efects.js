@@ -254,7 +254,7 @@ $(document).ready(function(){
       $(".hv_initial").css("display", "none");
       $(".hv_worked").css("display", "block");
      
-       $("#destino").load("http://wp-teme-1.edusite.me/contac_hv.php", {hv_nombre, hv_email, hv_mensaje}, function(){
+       $("#hv_destino").load("http://wp-teme-1.edusite.me/contac_hv.php", {hv_nombre, hv_email, hv_mensaje}, function(){
           $(".hv_finish").css("display", "block");
           $(".hv_worked").css("display", "none");
      });
