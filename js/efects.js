@@ -135,7 +135,7 @@ function maquina(contenedor,texto,intervalo){
       }},intervalo);
 };
 
-var texto = "Hola, soy Edwin, programador de paginas web especializado en el desarrollo Front End. _";
+var texto = "Hola, soy Edwin, programador de páginas web especializado en el desarrollo Front End. _";
 // 100 es el intervalo de minisegundos en el que se escribirá cada letra.
 
 

@@ -230,6 +230,7 @@ a#btn-flota-movil {
     color: #FF9C3A;
     z-index: 1;
     text-shadow: -6px 4px 10px black;
+    margin: 3% -3%;
 }
 
 /*Logo*/
